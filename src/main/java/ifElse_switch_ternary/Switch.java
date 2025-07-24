@@ -1,6 +1,7 @@
 package ifElse_switch_ternary;
 
 public class Switch {
+    //kullanılan daqta tipleri: int, char, String, byte, short
     public static void main(String[] args) {
         int day = 1;
         switch (day) {
