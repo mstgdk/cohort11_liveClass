@@ -64,10 +64,24 @@ public class HashMaps {
         for (Map.Entry<String,Integer>  w : entries){
             System.out.println("w.getKey() = " + w.getKey());
             System.out.println("w.getValue() = " + w.getValue());
-
+            //System.out.println("w.setValue(9999) = " + w.setValue(9999));
+        }
+        System.out.println(map);
+        //entryset olmadan
+        for (String k : map.keySet()){
+            System.out.println(map.get(k));
+            System.out.println(k);
+        }
+        for (Integer v : map.values()){
+            System.out.println(v);
         }
 
+        //clear
+        map.clear();
+        System.out.println(map);
 
+        //isEmpty
+        System.out.println(map.isEmpty());
 
     }
 }
