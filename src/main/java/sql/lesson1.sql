@@ -32,7 +32,6 @@ delete from yazarlar where id=6;
 --transaction
 begin;
 delete from yazarlar where id=9;
-commit;
 ROLLBACK;
 
 --date update
