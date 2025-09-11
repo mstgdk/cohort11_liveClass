@@ -44,9 +44,17 @@ public class Test06_ParameterizedTest {
         assertEquals(b, str1.contains(str2));
     }
    //enes
-   /* @ParameterizedTest
-    @CsvSource(value = {"MERHABA, merhaba, merhaba", "JAVA, java"})
-    void testToUpperCase3( String... str2){
-        assertEquals(str1, str2.toUpperCase());
-    }*/
+   @ParameterizedTest
+   @CsvSource({
+           "2,2,3",
+           "5,5"
+   })
+   void testVarargsLike(String csvLine) {
+       int[] numbers =
+               java.util.Arrays.stream(csvLine.split(","))
+                       .mapToInt(Integer::parseInt)
+                       .toArray();
+
+       System.out.println(java.util.Arrays.toString(numbers));
+   }
 }

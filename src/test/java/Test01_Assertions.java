@@ -1,10 +1,8 @@
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Test_Assertions01 {
+public class Test01_Assertions {
 
     @Test
     public void test(){
